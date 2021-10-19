@@ -1,5 +1,9 @@
 .App {
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 100vh;
 }
 
 .App-logo {
@@ -12,18 +16,37 @@
     animation: App-logo-spin infinite 20s linear;
   }
 }
-
+.Title {
+  padding-left: 30%;
+  color:cadetblue;
+}
+a {
+  color: inherit; /* blue colors for links too */
+  text-decoration: inherit; /* no underline */
+}
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  background-color: #e4e4e4;
+  min-height: 3vh;
+  max-height: 5vh;
   display: flex;
-  flex-direction: column;
+  padding-top: 1vh;
+  padding-bottom: 1vh;
+  padding-left: 2%;
+  padding-right: 2%;
+  flex-direction: row;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  /* flex-direction: column;
+  align-items: center;*/
+  /* justify-content: flex-start;  */
+  justify-content: space-between;
+  font-size: 3vh;
   color: white;
 }
-
+.No {
+  padding: 0;
+  margin: 0;
+  font-size: 1vh;
+}
 .App-link {
   color: #61dafb;
 }
@@ -35,4 +58,45 @@
   to {
     transform: rotate(360deg);
   }
+}
+.Open-menu{
+  display: flex;
+  padding: 1%;
+  margin: 0%;
+  background-color:beige;
+  align-items: center;
+  justify-content: center;
+}
+
+.App-footer{
+  background-color: #e4e4e4;
+  min-height: 3vh;
+  max-height: 5vh;
+  display: flex;
+  padding-top: 1vh;
+  padding-bottom: 1vh;
+  padding-left: 2%;
+  padding-right: 2%;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.App-body{
+  min-height: 88vh;
+  max-height: 88vh;
+  display: block;
+  position: relative;
+}
+.App-shelf{
+  float: right;
+}
+.App-cat{
+  position: absolute;
+}
+.Update-list{
+  float: top;
+  padding-left: 10%;
+  padding-right: 10%;
+  font-size: 3em;
 }
